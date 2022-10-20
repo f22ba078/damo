@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テキストにスタイル設定</title>
+    <style>
+        /*これはcssのコメントです*/
+        /*
+        複数行コメント書けちゃいます
+        */
+        h1{
+            font-size: 2.5em;
+            font-family: cursive;
+            color: #ff0000
+        }
+        h2{
+            font-size: 2.0em;
+            font-family: fantasy;
+            color: rgb(0,255,255);
+        }
+        h3{
+            /*!importantはタグ直書きより強い*/
+            font-size: 200%;
+            background-color: black;
+            color: #ffffff !important;
+        }
+        p{
+            font-size: 2.0em;
+            font-family: sans-serif;
+            color: blue
+        }
+        span{
+            font: bold italic 1.7em Serif;
+            background-color: magenta;
+            color: white;
+        }
+        #aa {
+            color: black;
+        }
+        h4{
+            background-color: black;
+        }
+        .shiro {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- これはコメントです -->
+    <h1>Hello!Fukuda!</h1>
+    <h1 id="aa">hello!Yamada!</h1>
+    <h2>MY HERO ACADEMIA</h2>
+    <!--白文字、黒背景でフォントサイズ２００％で作る-->    
+    <h3>dayodayoだよ</h3>
+    <h3 style="color: rgb(0,255,0); font-size: 300%;">おためし</h3>
+    <p>This is<span> Sample </span>content.</p>
+    <h4>1</h4>
+    <h4 class="shiro">2</h4>
+    <h4 class="shiro">3</h4>
+    <h4>4</h4>
+</body>
+</html>
